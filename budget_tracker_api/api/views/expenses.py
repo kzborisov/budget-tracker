@@ -1,7 +1,7 @@
 from rest_framework import generics as api_views
 
-from budget_tracker_api.api.models import Expense, Category
-from budget_tracker_api.api.serializers import ExpenseSerializer, CategorySerializer
+from budget_tracker_api.api.models.expenses import Expense, Category
+from budget_tracker_api.api.serializers.expenses import ExpenseSerializer, CategorySerializer
 
 
 class ExpenseView(api_views.ListCreateAPIView):

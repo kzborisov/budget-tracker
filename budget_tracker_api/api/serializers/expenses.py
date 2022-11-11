@@ -1,6 +1,9 @@
+from django.contrib.auth import get_user_model
 from rest_framework import serializers
 
-from budget_tracker_api.api.models import Expense, Category
+from budget_tracker_api.api.models.expenses import Expense, Category
+
+UserModel = get_user_model()
 
 
 class CategorySerializer(serializers.ModelSerializer):
