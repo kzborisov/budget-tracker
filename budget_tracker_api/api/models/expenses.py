@@ -1,3 +1,4 @@
+from django.contrib.auth import get_user_model
 from django.core.validators import MinValueValidator
 from django.db import models
 
@@ -38,3 +39,7 @@ class Expense(models.Model):
         Category,
         on_delete=models.CASCADE,
     )
+
+
+# User
+UserModel = get_user_model()
